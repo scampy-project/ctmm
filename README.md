@@ -40,7 +40,7 @@ A basic python interface to ctmm is included in the python subdirectory. pyctmm 
 
 ## Versioning
 
-[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/ctmm/ctmm).
+[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/scampy-project/ctmm).
 
 ## Authors
 
@@ -48,4 +48,4 @@ A basic python interface to ctmm is included in the python subdirectory. pyctmm 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
