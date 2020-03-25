@@ -1,0 +1,1566 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ctmm_8h" kind="file" language="C++">
+    <compoundname>ctmm.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="DLL__defines_8h" local="yes">DLL_defines.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>stdlib.h</label>
+      </node>
+      <node id="0">
+        <label>include/ctmm.h</label>
+        <link refid="ctmm_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>DLL_defines.h</label>
+        <link refid="DLL__defines_8h_source"/>
+      </node>
+      <node id="2">
+        <label>string.h</label>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structctmm__complex" prot="public">ctmm_complex</innerclass>
+    <innerclass refid="structctmm__matrix" prot="public">ctmm_matrix</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ctmm_8h_1ae71449b1cc6e6250b91f539153a7a0d3" prot="public" static="no">
+        <name>M_PI</name>
+        <initializer>(3.14159265358979323846)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="21" column="9" bodyfile="include/ctmm.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctmm_8h_1a2f51a8ee7666e494333751163e895555" prot="public" static="no">
+        <name>creal</name>
+        <param><defname>z</defname></param>
+        <initializer>((z).re)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="41" column="13" bodyfile="include/ctmm.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctmm_8h_1a4f20242c3b78244c6d3394e1068654b9" prot="public" static="no">
+        <name>cimag</name>
+        <param><defname>z</defname></param>
+        <initializer>((z).im)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="42" column="13" bodyfile="include/ctmm.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctmm_8h_1a60ef6e1bcfabb95cfeb300e1d03ce470" prot="public" static="no">
+        <name>I</name>
+        <initializer>im_i</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="46" column="13" bodyfile="include/ctmm.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="ctmm_8h_1a8e7b35bfff05f41ebe83b2bb4ee5894c" prot="public" static="no">
+        <type>CTMM_EXPORT struct <ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref></type>
+        <definition>typedef CTMM_EXPORT struct ctmm_matrix  ctmm_matrix</definition>
+        <argsstring></argsstring>
+        <name>ctmm_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fixed size 4x4 complex matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" prot="public" static="no">
+        <type>typedefCTMM_EXPORT struct <ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref> *</type>
+        <definition>typedef typedefCTMM_EXPORT struct ctmm_stack* ctmm_stack</definition>
+        <argsstring></argsstring>
+        <name>ctmm_stack</name>
+        <briefdescription>
+<para>Pointer to stack parameters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="218" column="1" bodyfile="include/ctmm.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ctmm_8h_1ae5a983aa19ee3a527e506f6f3942bd3f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>const ctmm_complex im_i</definition>
+        <argsstring></argsstring>
+        <name>im_i</name>
+        <initializer>= {0, 1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="45" column="1" bodyfile="include/ctmm.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ctmm_8h_1a7f669b1e5d0fe1e22910f0f518a3e858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_set</definition>
+        <argsstring>(double re, double im)</argsstring>
+        <name>ctmm_complex_set</name>
+        <param>
+          <type>double</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+<para>returns <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> number re + im*I. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>re</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>real part of complex number re + im*I </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>im</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>imaginary part of complex number re + im*I</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The exact definition of this function varies depending on if a C99 compliant compiler is available. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1ac9b9533fd134a90656add4e8c9cce755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_mul_real</definition>
+        <argsstring>(ctmm_complex z, double x)</argsstring>
+        <name>ctmm_complex_mul_real</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>multiplies <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> by real number</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>real number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> z*x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1ae9dddffca1cd8b5b341bfcacb8df1b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_add_real</definition>
+        <argsstring>(ctmm_complex z, double x)</argsstring>
+        <name>ctmm_complex_add_real</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> to real number</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>real number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> z + x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a34fc6b4dee9aaef0d59ac0a25991da00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_mul</definition>
+        <argsstring>(ctmm_complex z1, ctmm_complex z2)</argsstring>
+        <name>ctmm_complex_mul</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>multiplies two <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> numbers</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> z1*z2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1ac67cd3df08f6dbe2a2d7f0d42c1da162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_sub</definition>
+        <argsstring>(ctmm_complex z1, ctmm_complex z2)</argsstring>
+        <name>ctmm_complex_sub</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>subtracts one <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> from another</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> z1 - z2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a882d4a18c8b1823bbd2ed507110f346a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_add</definition>
+        <argsstring>(ctmm_complex z1, ctmm_complex z2)</argsstring>
+        <name>ctmm_complex_add</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adds one <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> to another</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> z1 + z2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1ab61fb5d26c9cbe7632845b9f945a7e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_div</definition>
+        <argsstring>(ctmm_complex z1, ctmm_complex z2)</argsstring>
+        <name>ctmm_complex_div</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>divides one <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> by another</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> z1/z2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a484ba813c7b57aaa8858ea7b10151ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_sqrt</definition>
+        <argsstring>(ctmm_complex z)</argsstring>
+        <name>ctmm_complex_sqrt</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculates square root of <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> sqrt(z) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1aac457c9fd67b8087f03cbbff85c6dd73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_exp</definition>
+        <argsstring>(ctmm_complex z)</argsstring>
+        <name>ctmm_complex_exp</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculates e to the power <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> e^z </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a0aee0a932bd55606e1441804d41ca01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_conj</definition>
+        <argsstring>(ctmm_complex z)</argsstring>
+        <name>ctmm_complex_conj</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculates complex conjugate of <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> conj(z) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a9d859f55cc61aa4bd62bee4579e8c278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_complex_inv</definition>
+        <argsstring>(ctmm_complex z)</argsstring>
+        <name>ctmm_complex_inv</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculates inverse of <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> 1/z </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a73a9184c6d1611943c9f0d8b06c8d33a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT double</type>
+        <definition>CTMM_EXPORT double ctmm_complex_abs2</definition>
+        <argsstring>(ctmm_complex z)</argsstring>
+        <name>ctmm_complex_abs2</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculates absolute value squared of <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> |z|^2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a7cab671c188698e532f88a83750261cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT double</type>
+        <definition>CTMM_EXPORT double ctmm_complex_arg</definition>
+        <argsstring>(ctmm_complex z)</argsstring>
+        <name>ctmm_complex_arg</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculates argument of <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> atan2(Im(z), Re(z)) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a46292df71f8fe243c6398896e3c25a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_matrix_set</definition>
+        <argsstring>(ctmm_matrix *mat, unsigned int row, unsigned int col, ctmm_complex val)</argsstring>
+        <name>ctmm_matrix_set</name>
+        <param>
+          <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets matrix value mat[row][col] to val</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>complex value of mat[row][col] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a150eddc772b09a241bd79847517dfa14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_matrix_get</definition>
+        <argsstring>(ctmm_matrix *mat, unsigned int row, unsigned int col)</argsstring>
+        <name>ctmm_matrix_get</name>
+        <param>
+          <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets matrix value mat[row][col]</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> value of mat[row][col] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1aedb36482d77f2e4f89cf360e4ba33f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_matrix_mul</definition>
+        <argsstring>(ctmm_matrix *mat1, ctmm_matrix *mat2, ctmm_matrix *res)</argsstring>
+        <name>ctmm_matrix_mul</name>
+        <param>
+          <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+          <declname>mat1</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+          <declname>mat2</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>multiplies two ctmm matrices and sets result res = mat1*mat2</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to matrix1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to matrix2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to result matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1aab631a2a30a59f90c7abe98b54e4c374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+        <definition>CTMM_EXPORT ctmm_stack ctmm_create_stack</definition>
+        <argsstring>(unsigned int nlyrs, double vwl, double t_in)</argsstring>
+        <name>ctmm_create_stack</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>nlyrs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vwl</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t_in</declname>
+        </param>
+        <briefdescription>
+<para>Initialises a new stack. </para>        </briefdescription>
+        <detaileddescription>
+<para>The stack should be deallocated with ctmm_free_stack(stack).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nlyrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of layers in stack. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vwl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vacuum wavelength of illuminating light (metres). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle of incidence (radians).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ctmm_stack with initialised arrays and matricies. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a7f76a2b88c195ab89c0b2493a9cb30d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_free_stack</definition>
+        <argsstring>(ctmm_stack stack)</argsstring>
+        <name>ctmm_free_stack</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Frees memory allocated upon stack creation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a3305f7b715536f7479cbf70936a81d09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_set_ind</definition>
+        <argsstring>(ctmm_stack stack, unsigned int lyr_n, double x, double y)</argsstring>
+        <name>ctmm_set_ind</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lyr_n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the refractive index of layer lyr_n to (x + y*i). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to set index in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lyr_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Layer number to set the index of. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Real component of refractive index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Imaginary component of refractive index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a280484931a028c65c50e7291119d2b1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_set_d</definition>
+        <argsstring>(ctmm_stack stack, unsigned int lyr_n, double d)</argsstring>
+        <name>ctmm_set_d</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lyr_n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Sets the thickness of layer lyr_n to d. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to set thickness in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lyr_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Layer number to set the index of. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thickness of layer lyr_n. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="259" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1ab4d6990e87a5f327ee2234e1fe0dd9f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex ctmm_get_ind</definition>
+        <argsstring>(ctmm_stack stack, unsigned int lyr_n)</argsstring>
+        <name>ctmm_get_ind</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lyr_n</declname>
+        </param>
+        <briefdescription>
+<para>Returns the refractive index of layer lyr_n to (x + y*i). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to get index from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lyr_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Layer number to get the index of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1aaf461a9a77902347499c973250759175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT double</type>
+        <definition>CTMM_EXPORT double ctmm_get_d</definition>
+        <argsstring>(ctmm_stack stack, unsigned int lyr_n)</argsstring>
+        <name>ctmm_get_d</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lyr_n</declname>
+        </param>
+        <briefdescription>
+<para>Returns the thickness of layer lyr_n. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to get thickness from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lyr_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Layer number to get the index of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a0d5bf9ac7c6c3183214e8d38e4c6a492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT double</type>
+        <definition>CTMM_EXPORT double ctmm_get_vwl</definition>
+        <argsstring>(ctmm_stack stack)</argsstring>
+        <name>ctmm_get_vwl</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Returns the vacuum wavelength used by stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to get vwl from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1af0020d9c778a3444d2c9f8c0c1d73183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT double</type>
+        <definition>CTMM_EXPORT double ctmm_get_t_in</definition>
+        <argsstring>(ctmm_stack stack)</argsstring>
+        <name>ctmm_get_t_in</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Returns the angle of incidence used by stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to get t_in from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1ab8aa9df1130d42341d534c6b1659f27a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT unsigned int</type>
+        <definition>CTMM_EXPORT unsigned int ctmm_get_nlyrs</definition>
+        <argsstring>(ctmm_stack stack)</argsstring>
+        <name>ctmm_get_nlyrs</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of layers in stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to get nlyrs from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1af23ff667f47bed4e62d416b964d5e6dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+        <definition>CTMM_EXPORT ctmm_matrix* ctmm_get_matrix</definition>
+        <argsstring>(ctmm_stack stack)</argsstring>
+        <name>ctmm_get_matrix</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the first element of the stack matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctmm_stack to get matrix from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a57126b815905aed7ee79ab33787e182d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT <ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>CTMM_EXPORT ctmm_complex kz</definition>
+        <argsstring>(ctmm_complex n, ctmm_complex k, double vwl)</argsstring>
+        <name>kz</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vwl</declname>
+        </param>
+        <briefdescription>
+<para>Calculate kz. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calculate the z (along stack) component of the wavevector from the x (parallel to interfaces) component of the wavevector in the zeroth layer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refractive index of layer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wavevector x component in zeroth layer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vwl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vacuum wavelength of illuminating light.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wavevector z component. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a519081343d6ab02e92658e6661680dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void evaluate_prop</definition>
+        <argsstring>(ctmm_matrix *pmat, double d, ctmm_complex n, ctmm_complex k, double vwl)</argsstring>
+        <name>evaluate_prop</name>
+        <param>
+          <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+          <declname>pmat</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vwl</declname>
+        </param>
+        <briefdescription>
+<para>Evaluate propigation matrix, for internal use. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pmat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix to be filled. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Layer thickness. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Layer refractive index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wavevector component parallel to interfaces. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vwl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vacuum wavelength of illuminating light. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a8951f63e7982111a770a99b912287660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void fresnel_coefs</definition>
+        <argsstring>(ctmm_complex *coefs, ctmm_complex n0, ctmm_complex n1, ctmm_complex k, double vwl)</argsstring>
+        <name>fresnel_coefs</name>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> *</type>
+          <declname>coefs</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vwl</declname>
+        </param>
+        <briefdescription>
+<para>Calculate Fresnel coefficients. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coefs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array to be filled with coefficients. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refractive index in incident layer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refractive index in exident layer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wavevector component parallel to interfaces. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vwl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vacuum wavelength of illuminating light. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a17c2633da5ab8469b5b8d39e5c97645d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void evaluate_tran</definition>
+        <argsstring>(ctmm_matrix *tmat, ctmm_complex k, ctmm_complex n0, ctmm_complex n1, double vwl)</argsstring>
+        <name>evaluate_tran</name>
+        <param>
+          <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref> *</type>
+          <declname>tmat</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vwl</declname>
+        </param>
+        <briefdescription>
+<para>Calculate transfer matrix, for internal use. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tmat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix to be filled. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wavevector component parallel to interfaces. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refractive index in incident layer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refractive index in exident layer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vwl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vacuum wavelength of illuminating light. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="353" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a73a8deb999eaf01e9f3328d712faf38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_evaluate</definition>
+        <argsstring>(ctmm_stack stack)</argsstring>
+        <name>ctmm_evaluate</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the stack transfer matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a51b239f3e1e656afa8329ec53bc7d986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_rts</definition>
+        <argsstring>(ctmm_stack stack, double *coefs)</argsstring>
+        <name>ctmm_rts</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>coefs</declname>
+        </param>
+        <briefdescription>
+<para>Calculates power reflectivities and transmissions. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reflectivity and transmission coefficients are calculated for both S and P polarised light. The calculated coefficients are stored in the &apos;coefs&apos; array. The stack matrix must have already been evaluated.</para><para>This function may return incorrect results if the first or final layer in the stack is absorbing (that is, have a non-zero imaginary component of the refractive index).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coefs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of coefficients ordered [rP, tP, rS, tS]. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stack struct. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="377" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1a9e9f757fb94cc21c7f0c2e8e18f82a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_rtps</definition>
+        <argsstring>(ctmm_stack stack, double *coefs)</argsstring>
+        <name>ctmm_rtps</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>coefs</declname>
+        </param>
+        <briefdescription>
+<para>Calculates power and phase reflectivities and transmissions. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reflectivity and transmission coefficients and phases are calculated for both S and P polarised light. The calculated coefficients are stored in the &apos;coefs&apos; array. The stack matrix must have already been evaluated.</para><para>This function may return incorrect results if the first or final layer in the stack is absorbing (that is, have a non-zero imaginary component of the refractive index).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coefs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to length 8 array of coefficients ordered [rP, tP, rS, tS, prP, ptP, prS, ptS]. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stack struct. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="394" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ctmm_8h_1adb6bad276cc0a1ff5886018413045df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CTMM_EXPORT void</type>
+        <definition>CTMM_EXPORT void ctmm_rtc</definition>
+        <argsstring>(ctmm_stack stack, ctmm_complex *coefs)</argsstring>
+        <name>ctmm_rtc</name>
+        <param>
+          <type><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> *</type>
+          <declname>coefs</declname>
+        </param>
+        <briefdescription>
+<para>calculates fresnel coefficients of stack </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coefs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to length 4 ctnn_complex array to hold coefficients ordered [r_p, t_p, r_s, t_s]. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to stack struct </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="403" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An optical transfer matrix modelling library. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Angus Bridges </para></simplesect>
+<simplesect kind="version"><para>0.3.0 </para></simplesect>
+<simplesect kind="date"><para>2020-02-11</para></simplesect>
+ctmm is an optical thin film transfer matrix modelling library written in C. It is primarily designed to provide a lightweight and efficient backend for tspy, a python package for optical network modelling. A 4x4 transfer matrix methodology is implemented, treating both polarisations simultaneously. Support for birefringent materials may be added in the future.</para><para><simplesect kind="copyright"><para>Copyright (c) 2020 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>_CTMM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CTMM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>M_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_PI<sp/>(3.14159265358979323846)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DLL_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>199901L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//check<sp/>for<sp/>C99<sp/>compiler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;complex.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_Complex<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//custom<sp/>definitions<sp/>for<sp/>non-standards<sp/>compliant<sp/>compilers<sp/>(ie<sp/>msvc)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structctmm__complex" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>re,<sp/>im;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//redefine<sp/>macros<sp/>from<sp/>&lt;complex.h&gt;<sp/>for<sp/>compatability<sp/>with<sp/>C99<sp/>complex.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>creal(z)<sp/>((z).re)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>cimag(z)<sp/>((z).im)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>im_i</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>im_i<sp/>=<sp/>{0,<sp/>1};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>I<sp/>im_i</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a7f669b1e5d0fe1e22910f0f518a3e858" kindref="member">ctmm_complex_set</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>re,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>im);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structctmm__matrix" refkind="compound"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>data[16];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<sp/><ref refid="ctmm_8h_1a8e7b35bfff05f41ebe83b2bb4ee5894c" kindref="member">ctmm_matrix</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1ac9b9533fd134a90656add4e8c9cce755" kindref="member">ctmm_complex_mul_real</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1ae9dddffca1cd8b5b341bfcacb8df1b3e" kindref="member">ctmm_complex_add_real</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a34fc6b4dee9aaef0d59ac0a25991da00" kindref="member">ctmm_complex_mul</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z1,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z2);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1ac67cd3df08f6dbe2a2d7f0d42c1da162" kindref="member">ctmm_complex_sub</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z1,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z2);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a882d4a18c8b1823bbd2ed507110f346a" kindref="member">ctmm_complex_add</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z1,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z2);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1ab61fb5d26c9cbe7632845b9f945a7e31" kindref="member">ctmm_complex_div</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z1,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z2);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a484ba813c7b57aaa8858ea7b10151ab3" kindref="member">ctmm_complex_sqrt</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1aac457c9fd67b8087f03cbbff85c6dd73" kindref="member">ctmm_complex_exp</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a0aee0a932bd55606e1441804d41ca01b" kindref="member">ctmm_complex_conj</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a9d859f55cc61aa4bd62bee4579e8c278" kindref="member">ctmm_complex_inv</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a73a9184c6d1611943c9f0d8b06c8d33a" kindref="member">ctmm_complex_abs2</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a7cab671c188698e532f88a83750261cc" kindref="member">ctmm_complex_arg</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>z);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a46292df71f8fe243c6398896e3c25a6d" kindref="member">ctmm_matrix_set</ref>(<ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*mat,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>val);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a150eddc772b09a241bd79847517dfa14" kindref="member">ctmm_matrix_get</ref>(<ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*mat,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1aedb36482d77f2e4f89cf360e4ba33f16" kindref="member">ctmm_matrix_mul</ref>(<ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*mat1,<sp/><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*mat2,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*res);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" refkind="member"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref><sp/>*<ref refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kindref="member">ctmm_stack</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">CTMM_EXPORT<sp/>ctmm_stack<sp/><ref refid="ctmm_8h_1aab631a2a30a59f90c7abe98b54e4c374" kindref="member">ctmm_create_stack</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nlyrs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vwl,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t_in);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a7f76a2b88c195ab89c0b2493a9cb30d2" kindref="member">ctmm_free_stack</ref>(ctmm_stack<sp/>stack);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a3305f7b715536f7479cbf70936a81d09" kindref="member">ctmm_set_ind</ref>(ctmm_stack<sp/>stack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lyr_n,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a280484931a028c65c50e7291119d2b1f" kindref="member">ctmm_set_d</ref>(ctmm_stack<sp/>stack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lyr_n,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1ab4d6990e87a5f327ee2234e1fe0dd9f2" kindref="member">ctmm_get_ind</ref>(ctmm_stack<sp/>stack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lyr_n);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1aaf461a9a77902347499c973250759175" kindref="member">ctmm_get_d</ref>(ctmm_stack<sp/>stack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lyr_n);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a0d5bf9ac7c6c3183214e8d38e4c6a492" kindref="member">ctmm_get_vwl</ref>(ctmm_stack<sp/>stack);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1af0020d9c778a3444d2c9f8c0c1d73183" kindref="member">ctmm_get_t_in</ref>(ctmm_stack<sp/>stack);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1ab8aa9df1130d42341d534c6b1659f27a" kindref="member">ctmm_get_nlyrs</ref>(ctmm_stack<sp/>stack);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*<ref refid="ctmm_8h_1af23ff667f47bed4e62d416b964d5e6dd" kindref="member">ctmm_get_matrix</ref>(ctmm_stack<sp/>stack);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal">CTMM_EXPORT<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/><ref refid="ctmm_8h_1a57126b815905aed7ee79ab33787e182d" kindref="member">kz</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>n,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>k,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vwl);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a519081343d6ab02e92658e6661680dec" kindref="member">evaluate_prop</ref>(<ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*pmat,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>n,</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>k,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vwl);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a8951f63e7982111a770a99b912287660" kindref="member">fresnel_coefs</ref>(<ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>*coefs,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>n0,</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>n1,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>k,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vwl);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a17c2633da5ab8469b5b8d39e5c97645d" kindref="member">evaluate_tran</ref>(<ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref><sp/>*tmat,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>k,</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>n0,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>n1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vwl);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a73a8deb999eaf01e9f3328d712faf38f" kindref="member">ctmm_evaluate</ref>(ctmm_stack<sp/>stack);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a51b239f3e1e656afa8329ec53bc7d986" kindref="member">ctmm_rts</ref>(ctmm_stack<sp/>stack,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*coefs);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1a9e9f757fb94cc21c7f0c2e8e18f82a69" kindref="member">ctmm_rtps</ref>(ctmm_stack<sp/>stack,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*coefs);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal">CTMM_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ctmm_8h_1adb6bad276cc0a1ff5886018413045df4" kindref="member">ctmm_rtc</ref>(ctmm_stack<sp/>stack,<sp/><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref><sp/>*coefs);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/ctmm.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="structctmm__complex" kind="struct"><name>ctmm_complex</name>
+    <member refid="structctmm__complex_1a095b6a7f40a77e3f52382febc7d366b9" kind="variable"><name>re</name></member>
+    <member refid="structctmm__complex_1a643c024c51c7aa9ed07c26b471128162" kind="variable"><name>im</name></member>
+  </compound>
+  <compound refid="structctmm__matrix" kind="struct"><name>ctmm_matrix</name>
+    <member refid="structctmm__matrix_1a4005da26eb54fe70b6e9f79980e49867" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="ctmm_8h" kind="file"><name>ctmm.h</name>
+    <member refid="ctmm_8h_1ae71449b1cc6e6250b91f539153a7a0d3" kind="define"><name>M_PI</name></member>
+    <member refid="ctmm_8h_1a2f51a8ee7666e494333751163e895555" kind="define"><name>creal</name></member>
+    <member refid="ctmm_8h_1a4f20242c3b78244c6d3394e1068654b9" kind="define"><name>cimag</name></member>
+    <member refid="ctmm_8h_1a60ef6e1bcfabb95cfeb300e1d03ce470" kind="define"><name>I</name></member>
+    <member refid="ctmm_8h_1a8e7b35bfff05f41ebe83b2bb4ee5894c" kind="typedef"><name>ctmm_matrix</name></member>
+    <member refid="ctmm_8h_1a208d8ce4677b9c01ae09885f72fc536d" kind="typedef"><name>ctmm_stack</name></member>
+    <member refid="ctmm_8h_1ae5a983aa19ee3a527e506f6f3942bd3f" kind="variable"><name>im_i</name></member>
+    <member refid="ctmm_8h_1a7f669b1e5d0fe1e22910f0f518a3e858" kind="function"><name>ctmm_complex_set</name></member>
+    <member refid="ctmm_8h_1ac9b9533fd134a90656add4e8c9cce755" kind="function"><name>ctmm_complex_mul_real</name></member>
+    <member refid="ctmm_8h_1ae9dddffca1cd8b5b341bfcacb8df1b3e" kind="function"><name>ctmm_complex_add_real</name></member>
+    <member refid="ctmm_8h_1a34fc6b4dee9aaef0d59ac0a25991da00" kind="function"><name>ctmm_complex_mul</name></member>
+    <member refid="ctmm_8h_1ac67cd3df08f6dbe2a2d7f0d42c1da162" kind="function"><name>ctmm_complex_sub</name></member>
+    <member refid="ctmm_8h_1a882d4a18c8b1823bbd2ed507110f346a" kind="function"><name>ctmm_complex_add</name></member>
+    <member refid="ctmm_8h_1ab61fb5d26c9cbe7632845b9f945a7e31" kind="function"><name>ctmm_complex_div</name></member>
+    <member refid="ctmm_8h_1a484ba813c7b57aaa8858ea7b10151ab3" kind="function"><name>ctmm_complex_sqrt</name></member>
+    <member refid="ctmm_8h_1aac457c9fd67b8087f03cbbff85c6dd73" kind="function"><name>ctmm_complex_exp</name></member>
+    <member refid="ctmm_8h_1a0aee0a932bd55606e1441804d41ca01b" kind="function"><name>ctmm_complex_conj</name></member>
+    <member refid="ctmm_8h_1a9d859f55cc61aa4bd62bee4579e8c278" kind="function"><name>ctmm_complex_inv</name></member>
+    <member refid="ctmm_8h_1a73a9184c6d1611943c9f0d8b06c8d33a" kind="function"><name>ctmm_complex_abs2</name></member>
+    <member refid="ctmm_8h_1a7cab671c188698e532f88a83750261cc" kind="function"><name>ctmm_complex_arg</name></member>
+    <member refid="ctmm_8h_1a46292df71f8fe243c6398896e3c25a6d" kind="function"><name>ctmm_matrix_set</name></member>
+    <member refid="ctmm_8h_1a150eddc772b09a241bd79847517dfa14" kind="function"><name>ctmm_matrix_get</name></member>
+    <member refid="ctmm_8h_1aedb36482d77f2e4f89cf360e4ba33f16" kind="function"><name>ctmm_matrix_mul</name></member>
+    <member refid="ctmm_8h_1aab631a2a30a59f90c7abe98b54e4c374" kind="function"><name>ctmm_create_stack</name></member>
+    <member refid="ctmm_8h_1a7f76a2b88c195ab89c0b2493a9cb30d2" kind="function"><name>ctmm_free_stack</name></member>
+    <member refid="ctmm_8h_1a3305f7b715536f7479cbf70936a81d09" kind="function"><name>ctmm_set_ind</name></member>
+    <member refid="ctmm_8h_1a280484931a028c65c50e7291119d2b1f" kind="function"><name>ctmm_set_d</name></member>
+    <member refid="ctmm_8h_1ab4d6990e87a5f327ee2234e1fe0dd9f2" kind="function"><name>ctmm_get_ind</name></member>
+    <member refid="ctmm_8h_1aaf461a9a77902347499c973250759175" kind="function"><name>ctmm_get_d</name></member>
+    <member refid="ctmm_8h_1a0d5bf9ac7c6c3183214e8d38e4c6a492" kind="function"><name>ctmm_get_vwl</name></member>
+    <member refid="ctmm_8h_1af0020d9c778a3444d2c9f8c0c1d73183" kind="function"><name>ctmm_get_t_in</name></member>
+    <member refid="ctmm_8h_1ab8aa9df1130d42341d534c6b1659f27a" kind="function"><name>ctmm_get_nlyrs</name></member>
+    <member refid="ctmm_8h_1af23ff667f47bed4e62d416b964d5e6dd" kind="function"><name>ctmm_get_matrix</name></member>
+    <member refid="ctmm_8h_1a57126b815905aed7ee79ab33787e182d" kind="function"><name>kz</name></member>
+    <member refid="ctmm_8h_1a519081343d6ab02e92658e6661680dec" kind="function"><name>evaluate_prop</name></member>
+    <member refid="ctmm_8h_1a8951f63e7982111a770a99b912287660" kind="function"><name>fresnel_coefs</name></member>
+    <member refid="ctmm_8h_1a17c2633da5ab8469b5b8d39e5c97645d" kind="function"><name>evaluate_tran</name></member>
+    <member refid="ctmm_8h_1a73a8deb999eaf01e9f3328d712faf38f" kind="function"><name>ctmm_evaluate</name></member>
+    <member refid="ctmm_8h_1a51b239f3e1e656afa8329ec53bc7d986" kind="function"><name>ctmm_rts</name></member>
+    <member refid="ctmm_8h_1a9e9f757fb94cc21c7f0c2e8e18f82a69" kind="function"><name>ctmm_rtps</name></member>
+    <member refid="ctmm_8h_1adb6bad276cc0a1ff5886018413045df4" kind="function"><name>ctmm_rtc</name></member>
+  </compound>
+  <compound refid="DLL__defines_8h" kind="file"><name>DLL_defines.h</name>
+    <member refid="DLL__defines_8h_1a8eee528665077d90e60fc7101b4173e9" kind="define"><name>CTMM_EXPORT</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structctmm__complex" kind="struct" language="C++" prot="public">
+    <compoundname>ctmm_complex</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structctmm__complex_1a095b6a7f40a77e3f52382febc7d366b9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ctmm_complex::re</definition>
+        <argsstring></argsstring>
+        <name>re</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="37" column="1" bodyfile="include/ctmm.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__complex_1a643c024c51c7aa9ed07c26b471128162" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ctmm_complex::im</definition>
+        <argsstring></argsstring>
+        <name>im</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ctmm.h" line="37" column="1" bodyfile="include/ctmm.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ctmm.h" line="36" column="1" bodyfile="include/ctmm.h" bodystart="36" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structctmm__complex_1a643c024c51c7aa9ed07c26b471128162" prot="public" virt="non-virtual"><scope>ctmm_complex</scope><name>im</name></member>
+      <member refid="structctmm__complex_1a095b6a7f40a77e3f52382febc7d366b9" prot="public" virt="non-virtual"><scope>ctmm_complex</scope><name>re</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

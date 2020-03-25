@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structctmm__stack" kind="struct" language="C++" prot="public">
+    <compoundname>ctmm_stack</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structctmm__stack_1ae7d8ac6a78376c63a6936e71d176d217" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ctmm_stack::nlyrs</definition>
+        <argsstring></argsstring>
+        <name>nlyrs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="58" column="1" bodyfile="src/ctmm.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a72b2f3d6a57d84ec0ea45b88d050c885" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ctmm_stack::vwl</definition>
+        <argsstring></argsstring>
+        <name>vwl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="60" column="1" bodyfile="src/ctmm.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a7fc35dabafd2888d4ed662557a850ee1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ctmm_stack::t_in</definition>
+        <argsstring></argsstring>
+        <name>t_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="61" column="1" bodyfile="src/ctmm.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a2442e45ca86b2ea46fe0d58c1e6dbcc7" prot="public" static="no" mutable="no">
+        <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref></type>
+        <definition>ctmm_complex ctmm_stack::kx</definition>
+        <argsstring></argsstring>
+        <name>kx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="62" column="1" bodyfile="src/ctmm.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a45bb2a2f1ddfe8200c69650533f2197e" prot="public" static="no" mutable="no">
+        <type><ref refid="structctmm__complex" kindref="compound">ctmm_complex</ref> *</type>
+        <definition>ctmm_complex* ctmm_stack::lyr_inds</definition>
+        <argsstring></argsstring>
+        <name>lyr_inds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="64" column="1" bodyfile="src/ctmm.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a0087cc188af8cf43f3f417a0761e0dc3" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* ctmm_stack::lyr_ds</definition>
+        <argsstring></argsstring>
+        <name>lyr_ds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="65" column="1" bodyfile="src/ctmm.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1ad6893c60b7feaad47bbfa765aec5c179" prot="public" static="no" mutable="no">
+        <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref></type>
+        <definition>ctmm_matrix ctmm_stack::tmp1</definition>
+        <argsstring></argsstring>
+        <name>tmp1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="67" column="1" bodyfile="src/ctmm.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a900cb9458562043d3edf02a3a42204f6" prot="public" static="no" mutable="no">
+        <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref></type>
+        <definition>ctmm_matrix ctmm_stack::tmp2</definition>
+        <argsstring></argsstring>
+        <name>tmp2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="68" column="1" bodyfile="src/ctmm.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a3eb8f241bd4ea59e3d4947283f96e65b" prot="public" static="no" mutable="no">
+        <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref></type>
+        <definition>ctmm_matrix ctmm_stack::tmp3</definition>
+        <argsstring></argsstring>
+        <name>tmp3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="69" column="1" bodyfile="src/ctmm.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structctmm__stack_1a95c00976ea6779df681f1cc4b64f8625" prot="public" static="no" mutable="no">
+        <type><ref refid="structctmm__matrix" kindref="compound">ctmm_matrix</ref></type>
+        <definition>ctmm_matrix ctmm_stack::matrix</definition>
+        <argsstring></argsstring>
+        <name>matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ctmm.c" line="71" column="1" bodyfile="src/ctmm.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct holding stack parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>ctmm_complex</label>
+        <link refid="structctmm__complex"/>
+      </node>
+      <node id="6">
+        <label>ctmm_stack</label>
+        <link refid="structctmm__stack"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>tmp3</edgelabel>
+          <edgelabel>matrix</edgelabel>
+          <edgelabel>tmp1</edgelabel>
+          <edgelabel>tmp2</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>lyr_inds</edgelabel>
+          <edgelabel>kx</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ctmm_matrix</label>
+        <link refid="structctmm__matrix"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/ctmm.c" line="57" column="1" bodyfile="src/ctmm.c" bodystart="57" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structctmm__stack_1a2442e45ca86b2ea46fe0d58c1e6dbcc7" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>kx</name></member>
+      <member refid="structctmm__stack_1a0087cc188af8cf43f3f417a0761e0dc3" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>lyr_ds</name></member>
+      <member refid="structctmm__stack_1a45bb2a2f1ddfe8200c69650533f2197e" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>lyr_inds</name></member>
+      <member refid="structctmm__stack_1a95c00976ea6779df681f1cc4b64f8625" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>matrix</name></member>
+      <member refid="structctmm__stack_1ae7d8ac6a78376c63a6936e71d176d217" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>nlyrs</name></member>
+      <member refid="structctmm__stack_1a7fc35dabafd2888d4ed662557a850ee1" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>t_in</name></member>
+      <member refid="structctmm__stack_1ad6893c60b7feaad47bbfa765aec5c179" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>tmp1</name></member>
+      <member refid="structctmm__stack_1a900cb9458562043d3edf02a3a42204f6" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>tmp2</name></member>
+      <member refid="structctmm__stack_1a3eb8f241bd4ea59e3d4947283f96e65b" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>tmp3</name></member>
+      <member refid="structctmm__stack_1a72b2f3d6a57d84ec0ea45b88d050c885" prot="public" virt="non-virtual"><scope>ctmm_stack</scope><name>vwl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
