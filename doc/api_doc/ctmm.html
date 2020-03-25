@@ -1,0 +1,473 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Core functions &mdash; ctmm 0.3dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Internal functions" href="ctmm_internal.html" />
+    <link rel="prev" title="API documentation" href="api.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ctmm
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Core functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-stack">Create stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#free-stack">Free stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-refractive-index">Set refractive index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-refractive-index">Get refractive index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-layer-thickness">Set layer thickness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-layer-thickness">Get layer thickness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-vacuum-wavelength">Get vacuum wavelength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-angle-of-incidence">Get angle of incidence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-number-of-layers">Get number of layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-stack-matrix-pointer">Get stack matrix pointer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#evaluate-stack">Evaluate stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculate-ampltiude-reflectivity-and-transmission-coefficients">Calculate ampltiude reflectivity and transmission coefficients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculate-power-reflectivity-and-transmission-coefficients">Calculate power reflectivity and transmission coefficients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculate-power-coefficients-and-phase-changes">Calculate power coefficients and phase changes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ctmm_internal.html">Internal functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ctmm_mathematical.html">Mathematical functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python_index.html">Python bindings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ctmm</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">API documentation</a> &raquo;</li>
+        
+      <li>Core functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api_doc/ctmm.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="core-functions">
+<h1>Core functions<a class="headerlink" href="#core-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="create-stack">
+<span id="ctmm-create-stack"></span><h2>Create stack<a class="headerlink" href="#create-stack" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1aab631a2a30a59f90c7abe98b54e4c374"></span><code class="sig-name descname">CTMM_EXPORT ctmm_stack ctmm_create_stack(unsigned int nlyrs, double vwl, double t_in)</code></dt>
+<dd><p>Initialises a new stack. </p>
+<p>The stack should be deallocated with ctmm_free_stack(stack).</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_stack with initialised arrays and matricies. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nlyrs</span></code>: Number of layers in stack. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vwl</span></code>: Vacuum wavelength of illuminating light (metres). </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">t_in</span></code>: Angle of incidence (radians).</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="free-stack">
+<span id="ctmm-free-stack"></span><h2>Free stack<a class="headerlink" href="#free-stack" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a7f76a2b88c195ab89c0b2493a9cb30d2"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_free_stack(ctmm_stack stack)</code></dt>
+<dd><p>Frees memory allocated upon stack creation. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="set-refractive-index">
+<span id="ctmm-set-ind"></span><h2>Set refractive index<a class="headerlink" href="#set-refractive-index" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a3305f7b715536f7479cbf70936a81d09"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_set_ind(ctmm_stack stack, unsigned int lyr_n, double x, double y)</code></dt>
+<dd><p>Sets the refractive index of layer lyr_n to (x + y*i). </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to set index in. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lyr_n</span></code>: Layer number to set the index of. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code>: Real component of refractive index. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code>: Imaginary component of refractive index. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="get-refractive-index">
+<span id="ctmm-get-ind"></span><h2>Get refractive index<a class="headerlink" href="#get-refractive-index" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1ab4d6990e87a5f327ee2234e1fe0dd9f2"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_get_ind(ctmm_stack stack, unsigned int lyr_n)</code></dt>
+<dd><p>Returns the refractive index of layer lyr_n to (x + y*i). </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to get index from. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lyr_n</span></code>: Layer number to get the index of. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="set-layer-thickness">
+<span id="ctmm-set-d"></span><h2>Set layer thickness<a class="headerlink" href="#set-layer-thickness" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a280484931a028c65c50e7291119d2b1f"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_set_d(ctmm_stack stack, unsigned int lyr_n, double d)</code></dt>
+<dd><p>Sets the thickness of layer lyr_n to d. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to set thickness in. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lyr_n</span></code>: Layer number to set the index of. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">d</span></code>: Thickness of layer lyr_n. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="get-layer-thickness">
+<span id="ctmm-get-d"></span><h2>Get layer thickness<a class="headerlink" href="#get-layer-thickness" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1aaf461a9a77902347499c973250759175"></span><code class="sig-name descname">CTMM_EXPORT double ctmm_get_d(ctmm_stack stack, unsigned int lyr_n)</code></dt>
+<dd><p>Returns the thickness of layer lyr_n. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to get thickness from. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lyr_n</span></code>: Layer number to get the index of. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="get-vacuum-wavelength">
+<span id="ctmm-get-vwl"></span><h2>Get vacuum wavelength<a class="headerlink" href="#get-vacuum-wavelength" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a0d5bf9ac7c6c3183214e8d38e4c6a492"></span><code class="sig-name descname">CTMM_EXPORT double ctmm_get_vwl(ctmm_stack stack)</code></dt>
+<dd><p>Returns the vacuum wavelength used by stack. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to get vwl from. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="get-angle-of-incidence">
+<span id="ctmm-get-t-in"></span><h2>Get angle of incidence<a class="headerlink" href="#get-angle-of-incidence" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1af0020d9c778a3444d2c9f8c0c1d73183"></span><code class="sig-name descname">CTMM_EXPORT double ctmm_get_t_in(ctmm_stack stack)</code></dt>
+<dd><p>Returns the angle of incidence used by stack. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to get t_in from. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="get-number-of-layers">
+<span id="ctmm-get-nlyrs"></span><h2>Get number of layers<a class="headerlink" href="#get-number-of-layers" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1ab8aa9df1130d42341d534c6b1659f27a"></span><code class="sig-name descname">CTMM_EXPORT unsigned int ctmm_get_nlyrs(ctmm_stack stack)</code></dt>
+<dd><p>Returns the number of layers in stack. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to get nlyrs from. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="get-stack-matrix-pointer">
+<span id="ctmm-get-matrix"></span><h2>Get stack matrix pointer<a class="headerlink" href="#get-stack-matrix-pointer" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1af23ff667f47bed4e62d416b964d5e6dd"></span><code class="sig-name descname">CTMM_EXPORT ctmm_matrix* ctmm_get_matrix(ctmm_stack stack)</code></dt>
+<dd><p>Returns a pointer to the first element of the stack matrix. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: ctmm_stack to get matrix from. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="evaluate-stack">
+<span id="ctmm-evaluate"></span><h2>Evaluate stack<a class="headerlink" href="#evaluate-stack" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a73a8deb999eaf01e9f3328d712faf38f"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_evaluate(ctmm_stack stack)</code></dt>
+<dd><p>Calculate the stack transfer matrix. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="calculate-ampltiude-reflectivity-and-transmission-coefficients">
+<span id="ctmm-rtc"></span><h2>Calculate ampltiude reflectivity and transmission coefficients<a class="headerlink" href="#calculate-ampltiude-reflectivity-and-transmission-coefficients" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1adb6bad276cc0a1ff5886018413045df4"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_rtc(ctmm_stack stack, ctmm_complex  * coefs)</code></dt>
+<dd><p>calculates fresnel coefficients of stack </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">coefs</span></code>: pointer to length 4 ctnn_complex array to hold coefficients ordered [r_p, t_p, r_s, t_s]. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: pointer to stack struct </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="calculate-power-reflectivity-and-transmission-coefficients">
+<span id="ctmm-rts"></span><h2>Calculate power reflectivity and transmission coefficients<a class="headerlink" href="#calculate-power-reflectivity-and-transmission-coefficients" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a51b239f3e1e656afa8329ec53bc7d986"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_rts(ctmm_stack stack, double * coefs)</code></dt>
+<dd><p>Calculates power reflectivities and transmissions. </p>
+<p>Reflectivity and transmission coefficients are calculated for both S and P polarised light. The calculated coefficients are stored in the ‘coefs’ array. The stack matrix must have already been evaluated.</p>
+<p>This function may return incorrect results if the first or final layer in the stack is absorbing (that is, have a non-zero imaginary component of the refractive index).</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">coefs</span></code>: Array of coefficients ordered [rP, tP, rS, tS]. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: Stack struct. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="section" id="calculate-power-coefficients-and-phase-changes">
+<span id="ctmm-rtps"></span><h2>Calculate power coefficients and phase changes<a class="headerlink" href="#calculate-power-coefficients-and-phase-changes" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a9e9f757fb94cc21c7f0c2e8e18f82a69"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_rtps(ctmm_stack stack, double * coefs)</code></dt>
+<dd><p>Calculates power and phase reflectivities and transmissions. </p>
+<p>Reflectivity and transmission coefficients and phases are calculated for both S and P polarised light. The calculated coefficients are stored in the ‘coefs’ array. The stack matrix must have already been evaluated.</p>
+<p>This function may return incorrect results if the first or final layer in the stack is absorbing (that is, have a non-zero imaginary component of the refractive index).</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">coefs</span></code>: Pointer to length 8 array of coefficients ordered [rP, tP, rS, tS, prP, ptP, prS, ptS]. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stack</span></code>: Stack struct. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ctmm_internal.html" class="btn btn-neutral float-right" title="Internal functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api.html" class="btn btn-neutral float-left" title="API documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, tbc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

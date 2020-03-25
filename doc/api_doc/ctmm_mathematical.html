@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mathematical functions &mdash; ctmm 0.3dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python bindings" href="../python/python_index.html" />
+    <link rel="prev" title="Internal functions" href="ctmm_internal.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ctmm
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">API documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ctmm.html">Core functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ctmm_internal.html">Internal functions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Mathematical functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python_index.html">Python bindings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ctmm</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">API documentation</a> &raquo;</li>
+        
+      <li>Mathematical functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api_doc/ctmm_mathematical.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mathematical-functions">
+<h1>Mathematical functions<a class="headerlink" href="#mathematical-functions" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a7f669b1e5d0fe1e22910f0f518a3e858"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_set(double re, double im)</code></dt>
+<dd><p>returns ctmm_complex number re + im*I. </p>
+<p><p>The exact definition of this function varies depending on if a C99 compliant compiler is available. </p>
+<dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">re</span></code>: real part of complex number re + im*I </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">im</span></code>: imaginary part of complex number re + im*I</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1ac9b9533fd134a90656add4e8c9cce755"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_mul_real(ctmm_complex z, double x)</code></dt>
+<dd><p>multiplies ctmm_complex by real number</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex z*x </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code>: real number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1ae9dddffca1cd8b5b341bfcacb8df1b3e"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_add_real(ctmm_complex z, double x)</code></dt>
+<dd><p>add ctmm_complex to real number</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex z + x </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code>: real number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a34fc6b4dee9aaef0d59ac0a25991da00"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_mul(ctmm_complex z1, ctmm_complex z2)</code></dt>
+<dd><p>multiplies two ctmm_complex numbers</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex z1*z2 </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z1</span></code>: complex number </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">z2</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1ac67cd3df08f6dbe2a2d7f0d42c1da162"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_sub(ctmm_complex z1, ctmm_complex z2)</code></dt>
+<dd><p>subtracts one ctmm_complex from another</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex z1 - z2 </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z1</span></code>: complex number </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">z2</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a882d4a18c8b1823bbd2ed507110f346a"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_add(ctmm_complex z1, ctmm_complex z2)</code></dt>
+<dd><p>adds one ctmm_complex to another</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex z1 + z2 </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z1</span></code>: complex number </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">z2</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1ab61fb5d26c9cbe7632845b9f945a7e31"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_div(ctmm_complex z1, ctmm_complex z2)</code></dt>
+<dd><p>divides one ctmm_complex by another</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex z1/z2 </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z1</span></code>: complex number </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">z2</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a484ba813c7b57aaa8858ea7b10151ab3"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_sqrt(ctmm_complex z)</code></dt>
+<dd><p>calculates square root of ctmm_complex</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex sqrt(z) </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1aac457c9fd67b8087f03cbbff85c6dd73"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_exp(ctmm_complex z)</code></dt>
+<dd><p>calculates e to the power ctmm_complex</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex e^z </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a0aee0a932bd55606e1441804d41ca01b"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_conj(ctmm_complex z)</code></dt>
+<dd><p>calculates complex conjugate of ctmm_complex</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex conj(z) </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a9d859f55cc61aa4bd62bee4579e8c278"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_complex_inv(ctmm_complex z)</code></dt>
+<dd><p>calculates inverse of ctmm_complex</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex 1/z </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a73a9184c6d1611943c9f0d8b06c8d33a"></span><code class="sig-name descname">CTMM_EXPORT double ctmm_complex_abs2(ctmm_complex z)</code></dt>
+<dd><p>calculates absolute value squared of ctmm_complex</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex |z|^2 </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a7cab671c188698e532f88a83750261cc"></span><code class="sig-name descname">CTMM_EXPORT double ctmm_complex_arg(ctmm_complex z)</code></dt>
+<dd><p>calculates argument of ctmm_complex</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex atan2(Im(z), Re(z)) </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code>: complex number</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a46292df71f8fe243c6398896e3c25a6d"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_matrix_set(ctmm_matrix  * mat, unsigned int row, unsigned int col, ctmm_complex val)</code></dt>
+<dd><p>sets matrix value mat[row][col] to val</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mat</span></code>: pointer to matrix </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">row</span></code>: row </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">col</span></code>: column </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">val</span></code>: complex value of mat[row][col] </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a150eddc772b09a241bd79847517dfa14"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex ctmm_matrix_get(ctmm_matrix  * mat, unsigned int row, unsigned int col)</code></dt>
+<dd><p>gets matrix value mat[row][col]</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>ctmm_complex value of mat[row][col] </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mat</span></code>: pointer to matrix </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">row</span></code>: row </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">col</span></code>: column</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1aedb36482d77f2e4f89cf360e4ba33f16"></span><code class="sig-name descname">CTMM_EXPORT void ctmm_matrix_mul(ctmm_matrix  * mat1, ctmm_matrix  * mat2, ctmm_matrix  * res)</code></dt>
+<dd><p>multiplies two ctmm matrices and sets result res = mat1*mat2</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mat1</span></code>: pointer to matrix1 </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mat1</span></code>: pointer to matrix2 </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">res</span></code>: pointer to result matrix </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../python/python_index.html" class="btn btn-neutral float-right" title="Python bindings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ctmm_internal.html" class="btn btn-neutral float-left" title="Internal functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, tbc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

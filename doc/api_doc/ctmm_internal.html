@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Internal functions &mdash; ctmm 0.3dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Mathematical functions" href="ctmm_mathematical.html" />
+    <link rel="prev" title="Core functions" href="ctmm.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ctmm
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">API documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ctmm.html">Core functions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Internal functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ctmm_mathematical.html">Mathematical functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python_index.html">Python bindings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ctmm</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">API documentation</a> &raquo;</li>
+        
+      <li>Internal functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api_doc/ctmm_internal.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="internal-functions">
+<h1>Internal functions<a class="headerlink" href="#internal-functions" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a57126b815905aed7ee79ab33787e182d"></span><code class="sig-name descname">CTMM_EXPORT ctmm_complex kz(ctmm_complex n, ctmm_complex k, double vwl)</code></dt>
+<dd><p>Calculate kz. </p>
+<p>Calculate the z (along stack) component of the wavevector from the x (parallel to interfaces) component of the wavevector in the zeroth layer.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Wavevector z component. </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code>: Refractive index of layer. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">k</span></code>: Wavevector x component in zeroth layer. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vwl</span></code>: Vacuum wavelength of illuminating light.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a519081343d6ab02e92658e6661680dec"></span><code class="sig-name descname">CTMM_EXPORT void evaluate_prop(ctmm_matrix  * pmat, double d, ctmm_complex n, ctmm_complex k, double vwl)</code></dt>
+<dd><p>Evaluate propigation matrix, for internal use. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pmat</span></code>: Matrix to be filled. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">d</span></code>: Layer thickness. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code>: Layer refractive index. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">k</span></code>: Wavevector component parallel to interfaces. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vwl</span></code>: Vacuum wavelength of illuminating light. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a8951f63e7982111a770a99b912287660"></span><code class="sig-name descname">CTMM_EXPORT void fresnel_coefs(ctmm_complex  * coefs, ctmm_complex n0, ctmm_complex n1, ctmm_complex k, double vwl)</code></dt>
+<dd><p>Calculate Fresnel coefficients. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">coefs</span></code>: Array to be filled with coefficients. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n0</span></code>: Refractive index in incident layer. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n1</span></code>: Refractive index in exident layer. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">k</span></code>: Wavevector component parallel to interfaces. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vwl</span></code>: Vacuum wavelength of illuminating light. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="ctmm_8h_1a17c2633da5ab8469b5b8d39e5c97645d"></span><code class="sig-name descname">CTMM_EXPORT void evaluate_tran(ctmm_matrix  * tmat, ctmm_complex k, ctmm_complex n0, ctmm_complex n1, double vwl)</code></dt>
+<dd><p>Calculate transfer matrix, for internal use. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tmat</span></code>: Matrix to be filled. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">k</span></code>: Wavevector component parallel to interfaces. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n0</span></code>: Refractive index in incident layer. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n1</span></code>: Refractive index in exident layer. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vwl</span></code>: Vacuum wavelength of illuminating light. </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ctmm_mathematical.html" class="btn btn-neutral float-right" title="Mathematical functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ctmm.html" class="btn btn-neutral float-left" title="Core functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, tbc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

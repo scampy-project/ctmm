@@ -1,0 +1,5 @@
+Introduction
+============
+
+`ctmm` can be accessed from python through the `pyctmm` module, a CPython
+extension module exposing the core functions of `ctmm`.
