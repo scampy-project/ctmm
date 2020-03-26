@@ -20,7 +20,7 @@ thin film modelling see:
 
     * P. Yeh, “Optical Waves in Layered Media,” (John Wiley & Sons, Inc.,Hoboken, New Jersey, 1998), pp. 62–63.
 
-As per the terms of the MIT licence, this software is provided "as is", without warranty of any kind. Please see the `licence file <https://github.com/strapy-project/strapy/blob/master/LICENSE>`_ for full details.
+As per the terms of the MIT licence, this software is provided "as is", without warranty of any kind. Please see the `licence file <https://github.com/strapy-project/ctmm/blob/master/LICENSE>`_ for full details.
 
 Licencing
 ---------
