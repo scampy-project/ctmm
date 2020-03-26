@@ -46,7 +46,7 @@ extensions = [
     'breathe'
 ]
 
-breathe_projects = { "ctmm": "C:/Users/ab35/OneDrive - National Physical Laboratory/Documents/NPL/modelling/ctmm/doc/xml" }
+breathe_projects = { "ctmm": "doc/xml" }
 breathe_default_project = "ctmm"
 
 # Add any paths that contain templates here, relative to this directory.
