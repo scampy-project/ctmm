@@ -27,7 +27,7 @@ def main():
             runtime_library_dirs=['$ORIGIN'])
 
     setuptools.setup(name = 'pyctmm',
-        version = '1.0.0',
+        version = '1.0.1',
         description = 'Python interface for the ctmm optical transfer matrix modelling library',
         author = 'Angus Bridges',
         author_email = 'angus.bridges@npl.co.uk',
