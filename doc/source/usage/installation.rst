@@ -74,3 +74,12 @@ To install the python bindings (`pyctmm`) following the build step: ::
 To use `pyctmm` a python 3 installation (see installation instructions for
 `Windows <https://docs.python.org/3/using/windows.html>`_, or
 `Unix <https://docs.python.org/3/using/unix.html>`_) is required.
+
+`pyctmm` is also available on the python packaging index via: ::
+
+    pip install pyctmm
+
+This is currently experimental, and installation may fail if none of the available
+`ctmm` shared library files are binary compatable with the system `pyctmm` is to be
+installed on. If pip installation does fail building the libraries locally via CMake
+should provide an alternative.
