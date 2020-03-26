@@ -2,6 +2,8 @@
 
 ctmm is an optical thin film transfer matrix modelling library written in C. It is primarily designed to provide a lightweight and efficient backend for tspy, a python package for optical network modelling. A 4x4 transfer matrix methodology is implemented, treating both polarisations simultaneously.
 
+For full documentation, see [ctmm.readthedocs.io](https://ctmm.readthedocs.io/)
+
 ## Getting Started
 
 For useage of the library the test programs (see below) provide an example of applying the library to thin film optical modelling. A basic outline of the purpose and useage of each function may be found in ctmm.h.
