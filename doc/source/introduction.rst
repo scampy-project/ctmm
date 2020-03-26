@@ -12,7 +12,7 @@ absorbing (metallic) optical materials with complex refractive indices.
 
 `ctmm` is primarily intended to be used as a backend for other software, rather
 than as a standalone tool, in particular `ctmm` acts as a transfer matrix
-modelling tool for the `scampy` optical modelling package. As such python
+modelling tool for the `strapy` optical modelling package. As such python
 bindings are provided in the form of a CPython extension module.
 
 For a detailed introduction to the transfer matrix modelling technique for

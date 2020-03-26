@@ -42,7 +42,7 @@ A basic python interface to ctmm is included in the python subdirectory. pyctmm 
 
 ## Versioning
 
-[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/scampy-project/ctmm).
+[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/strapy-project/ctmm).
 
 ## Authors
 
