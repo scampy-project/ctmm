@@ -46,7 +46,7 @@ extensions = [
     'breathe'
 ]
 
-breathe_projects = { "ctmm": "doc/xml" }
+breathe_projects = { "ctmm": "../xml" }
 breathe_default_project = "ctmm"
 
 # Add any paths that contain templates here, relative to this directory.
